@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>2eba1cf8-43e9-4d8c-8b6f-cb40e66aaa00</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Ldap\**" />
+    <Compile Remove="Services\MongoDB\**" />
+    <Content Remove="Services\Ldap\**" />
+    <Content Remove="Services\MongoDB\**" />
+    <EmbeddedResource Remove="Services\Ldap\**" />
+    <EmbeddedResource Remove="Services\MongoDB\**" />
+    <None Remove="Services\Ldap\**" />
+    <None Remove="Services\MongoDB\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Api\Arr\PostmanController.cs" />
+    <Compile Remove="Controllers\Api\BaseMongoDbController.cs" />
+    <Compile Remove="Data\DataExtension.cs" />
+    <Compile Remove="Data\DataHelper.cs" />
+    <Compile Remove="Data\DeepCellPostgreContext.cs" />
+    <Compile Remove="Data\MongoDbContext.cs" />
+    <Compile Remove="Infrastructure\MebDbStartup.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Meb.Api.Framework" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
+    <PackageReference Include="System.DirectoryServices" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\CustomModule\" />
+  </ItemGroup>
+
+</Project>

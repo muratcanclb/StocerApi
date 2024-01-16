@@ -1,0 +1,31 @@
+﻿
+
+namespace Intra.Api.Infrastructure.Constants
+{
+    public class ConstantError
+    {
+        public const string ALREADY_REGISTERED = "MESSAGE.AUTH.REGISTER.ALREADY_REGISTERED";
+        public const string PASSWORD_NOT_CORRENT = "MESSAGE.AUTH.REGISTER.PASSWORD_NOT_CORRENT";
+        public const string USER_OR_PASSWORD_NOT_CORRENT = "MESSAGE.AUTH.REGISTER.USER_OR_PASSWORD_NOT_CORRENT";
+
+        public const string CONFIRM_OK = "MESSAGE.AUTH.CONFIRM.OK";
+        public const string CONFIRM_NO = "MESSAGE.AUTH.CONFIRM.NO";
+
+        public const string LDAP_USER_CAN_NOT_UPDATE_PASSWORD = "MESSAGE.LDAP_USER_CAN_NOT_UPDATE_PASSWORD";
+        public const string USER_NOT_FOUND = "MESSAGE.USER_NOT_FOUND";
+        public const string PLEASE_CONTROL_YOUR_MAIL = "MESSAGE.PLEASE_CONTROL_YOUR_MAIL";
+        public const string YOUR_PASSWORD_UPDATED = "MESSAGE.YOUR_PASSWORD_UPDATED";
+        public const string PASSWORD_UPDATE_CODE_IS_DEAT = "MESSAGE.PASSWORD_UPDATE_CODE_IS_DEAT";
+        public const string EMAIL_ALREADY_USED = "MESSAGE.EMAIL_ALREADY_USED";
+
+        public const string NO_RECORD_FOUND = "GENERAL.MESSAGES.NO_RECORD_FOUND";
+        public const string CAN_NOT_UPDATE_LDAP_PASSWORD = "GENERAL.MESSAGES.CAN_NOT_UPDATE_LDAP_PASSWORD";
+        public const string THIS_NAME_ALREADY_USED = "GENERAL.MESSAGES.THIS_NAME_ALREADY_USED";
+
+        public const string INSERT_NOT_SAVED = "GENERAL.MESSAGES.INSERT_NOT_SAVED";
+        public const string ONE_RECORD_MUST_BE_SELECTED = "GENERAL.MESSAGES.ONE_RECORD_MUST_BE_SELECTED";
+
+
+
+    }
+}
